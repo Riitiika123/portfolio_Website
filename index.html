@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+    <!--   Nav Section   -->
+
+    <nav id="navbar">
+        <div class="logo">
+        <h1>Portfolio</h1>
+        </div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="project_section.html">Project</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <h3 id="dark-mode-navbar" onclick="toggleDarkMode()"> 
+          <i class="fa-regular fa-sun" id="mode-icon-navbar"></i>
+        </h3> 
+      </nav>
+    <!--Hamburger menu-->
+    <nav id="hamburger-nav">
+        
+        <div class="logo">
+            <h1>Portfolio</h1>
+        </div>
+       
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="menu-links">
+              <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+              <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+              <li><a href="skills.html" onclick="toggleMenu()">Skills</a></li>
+              <li><a href="project_section.html" onclick="toggleMenu()">Projects</a></li>
+              <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+            </div>
+          </div>
+          <h3 id="dark-mode-hamburger" onclick="toggleDarkMode()"> 
+            <i class="fa-regular fa-sun" id="mode-icon-hamburger"></i>
+          </h3>
+      </nav>
+
+
+    <!--   Home Section  -->
+
+    <div class="home-page" id="home-page">
+        <div class="profile">
+            <img src='/images/profile.jpeg' class="my-image">
+        </div>
+        <div class="headings">
+            <div class="heading1">
+                <h4>HI THERE ,I'm</h4>
+            </div>
+            <div class="heading2">
+                <h1>Ritika</h1>
+            </div>
+            <div class="heading3">
+                <h4 class="dynamic-text">
+                <span id="role"></span>
+                </h4>
+            </div>
+        </div>
+        <div class="btn">
+           <a href="about.html"> <button class="about-btn">About Me</button> </a>
+           <button class="resume-btn" onclick="window.open('./images/resume.jpg')">Resume</button>
+        </div>
+    </div>
+
+    <!--   About Section  -->
+    <div class="about-section">
+    <h1> INTRODUCTION </h1>
+    <h2>Know More About Me</h2>
+
+    <h4> Hi, I'm Ritika, & </h4>
+
+    <div class="about-details-container">
+        <div class="about-container">
+          <div class="details-container">
+            <i class="fas fa-user icon"></i>
+            <h3>Fresher</h3>
+            <p>Web & App Developer</p>
+          </div>
+          <div class="details-container">
+            <i class="fas fa-graduation-cap icon"></i>
+            <h3>Education</h3>
+            <p>Final year B.Tech Student in <br />Computer Science</p>
+          </div>
+        </div>
+
+    <pr class="paragraph"></pr>I'm  dedicated and passionate software developer with expertise in Flutter app development, web development, and UI/UX design.
+    <br><br>
+    With certifications in Flutter, Python, and Web Development, I have developed projects ranging from interactive chatbots to dynamic weather apps and e-commerce platforms. Beyond coding, I enjoy exploring Generative AI technologies and Graphic Design to push the boundaries of creativity in my work.
+    <br><br>
+    My goal is to continue developing impactful applications that enhance user experiences while growing as a tech enthusiast in this ever-evolving digital world.
+    </Pr>
+    <h3>Also check me at: </h3>
+    <div class="links">
+    <a href="https://github.com/Riitiika123"><i class="fab fa-github social-icon"></i></a>
+    <a href="https://www.linkedin.com/in/miss-ritika-54a550251/"><i class="fab fa-linkedin social-icon"></i></a>
+    </a>
+    </div>
+    </div>
+
+
+    <!-- Skill Section -->
+    <div class="skills-section" id="skills">
+        <h1>Top Skills</h1>
+      
+        <!-- Programming Languages Section -->
+        <div class="skills-category">
+          <h2>Programming Languages</h2>
+          <div class="skills-container">
+            <div class="skill-item">
+                <i class="fab fa-html5 skill-icon"></i>
+                <h3>HTML</h3>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 98%;"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-css3-alt skill-icon"></i>
+                <h3>CSS</h3>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 95%;"></div>
+                </div>
+              </div>
+            
+            <div class="skill-item">
+              <i class="fab fa-js-square skill-icon"></i>
+              <h3>JavaScript</h3>
+              <div class="progress-bar">
+                <div class="progress" style="width: 50%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+                <i class="fas fa-code skill-icon"></i>
+                <h3>Dart</h3>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 60%;"></div>
+                </div>
+              </div>
+
+            <div class="skill-item">
+                <i class=" fab fa-python skill-icon"></i>
+                <h3>Python</h3>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 40%;"></div>
+                </div>
+              </div>
+          </div>
+        </div>
+      
+        <!-- Technical Skills Section -->
+        <div class="skills-category">
+          <h2>Technical Skills</h2>
+          <div class="skills-container">
+            <div class="skill-item">
+              <i class="fab fa-flutter skill-icon"></i>
+              <h3>Flutter</h3>
+              <div class="progress-bar">
+                <div class="progress" style="width: 70%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <i class="fas fa-code skill-icon"></i>
+              <h3>VS Code</Code></h3>
+              <div class="progress-bar">
+                <div class="progress" style="width: 80%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <i class="fab fa-git-alt skill-icon"></i>
+              <h3>GitHub</h3>
+              <div class="progress-bar">
+                <div class="progress" style="width: 60%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <i class="fas fa-plug skill-icon"></i>
+              <h3>API Integration</h3>
+              <div class="progress-bar">
+                <div class="progress" style="width: 70%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+                <i class="fab fa-html5 skill-icon"></i>
+                <h3>FireBase</h3>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 50%;"></div>
+                </div>
+              </div>
+          </div>
+        </div>
+      
+        <!-- Other Skills Section -->
+        <div class="skills-category">
+          <h2>Other Skills</h2>
+          <div class="skills-container">
+            <div class="skill-item">
+              <i class="fas fa-palette skill-icon"></i>
+              <h3>Graphic Design</h3>
+              <div class="progress-bar">
+                <div class="progress" style="width: 80%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <i class="fas fa-comments skill-icon"></i>
+              <h3>Communication</h3>
+              <div class="progress-bar">
+                <div class="progress" style="width: 90%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <i class="fas fa-brain skill-icon"></i>
+              <h3>Problem Solving</h3>
+              <div class="progress-bar">
+                <div class="progress" style="width: 85%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+    <!--  Project Section -->
+      <div class="projects" id="projects">
+        <h2>My Recent Projects</h2>
+        <div class="container">
+        <div class="box">
+            <img src="/images/e-commerce.jpg" class="e-commerce">
+            <h3> E-COMMERCE WEBSITE</h3>
+            <pr class="description">A modern e-commerce platform designed for a seamless shopping experience. Features include user-friendly product navigation, secure checkout, and mobile-first responsive design.</pr>
+            <button class="projectButton"><a href="https://glamlook.netlify.app/">Live Demo</a></button>
+        </div>
+        <div class="box">
+            <img src="/images/notes.png" class="notes">
+                <h3>NOTES WRITING WEBSITE</h3>
+                <pr class="description">A web-based app for organizing and managing notes efficiently, enhanced with AI features for quick searching and categorization. Built for students and professionals to simplify note-taking.</pr>
+                <button class="projectButton"><a href="https://resplendent-madeleine-cd3666.netlify.app/">Live Demo</a></button>
+        </div>
+        <div class="box">
+            <img src="/images/weatherApp.png" class="weatherApp">
+            <h3>WEATHER FORECASTING APP</h3>
+            <pr class="description"> A Flutter-based app that provides real-time <br>weather updates, including temperature, humidity, and wind speed. Designed with an engaging and user-friendly UI for seamless navigation.</pr>
+            <button class="projectButton"><a href="#">View On GitHub</a></button>
+        </div>
+
+        <div class="box">
+            <img src="/images/Assistant.png" class="assistantApp">
+            <h3>AI CHATBOT APP</h3>
+            <pr class="description">An AI-powered chatbot app built with Flutter, utilizing Google’s Gemini API. The app supports text-based queries, image analysis, and stores chat history with Hive for a personalized user experience.</pr>
+            <button class="projectButton"><a href="https://github.com/Riitiika123/AI-Genie">View On GitHub</a></button>
+        </div>
+
+        <div class="box">
+            <img src="/images/profile.jpeg" class="portfolioWeb">
+            <h3>PORTFOLIO WEBSITE</h3>
+            <pr class="description">A responsive and interactive portfolio website showcasing skills, projects, and achievements. Includes features like a downloadable resume, GitHub integration, and a visually appealing layout.</pr>
+            <button class="projectButton"><a href="#">Live Demo</a></button>
+        </div>
+    </div>
+</div>
+
+<!--  Contact Page   -->
+<div class="contact-container">
+  <h1>Get in Touch</h1>
+  <h2>With Me</h2>
+  <div class="contact-informations">
+  <img class="contact-img" src="/images/contact.avif">
+  <form id="contactForm">
+    
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+
+      <button type="submit" class="submit-btn">Send Message</button>
+  </form>
+  </div>
+
+  <div class="links">
+      <a href="https://github.com/ritika" target="_blank">
+        <i class="fab fa-github social-icon"></i>
+      </a>
+  
+      <a href="https://linkedin.com/in/ritika" target="_blank">
+        <i class="fab fa-linkedin social-icon"></i>
+      </a>
+      <a href="mailto:ritika1962005@gmail.com">
+        <i class="fas fa-envelope social-icon" ></i>
+      </a>
+  </div>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

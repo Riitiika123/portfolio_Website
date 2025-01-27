@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+     <!--   Nav Section   -->
+
+    <nav id="navbar">
+      <div class="logo">
+      <h1>Portfolio</h1>
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="project_section.html">Project</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <h3 id="dark-mode-navbar" onclick="toggleDarkMode()"> 
+        <i class="fa-regular fa-sun" id="mode-icon-navbar"></i>
+      </h3> 
+    </nav>
+  <!--Hamburger menu-->
+  <nav id="hamburger-nav">
+      
+      <div class="logo">
+          <h1>Portfolio</h1>
+      </div>
+     
+      <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+            <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+            <li><a href="skills.html" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="project_section.html" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+        <h3 id="dark-mode-hamburger" onclick="toggleDarkMode()"> 
+          <i class="fa-regular fa-sun" id="mode-icon-hamburger"></i>
+        </h3>
+    </nav>
+
+
+    <!--  Projects show-->
+    <div class="projects" id="projects">
+        <h1> My Recent Projects</h1>
+        <div class="container">
+        <div class="box">
+            <img src="/images/e-commerce.jpg" class="e-commerce">
+            <h3> E-COMMERCE WEBSITE</h3>
+            <pr class="description">A modern e-commerce platform designed for a seamless shopping experience. Features include user-friendly product navigation, secure checkout, and mobile-first responsive design.</pr>
+            <button class="projectButton"><a href="https://glamlook.netlify.app/">Live Demo</a></button>
+        </div>
+        <div class="box">
+            <img src="/images/notes.png" class="notes">
+                <h3>NOTES WRITING WEBSITE</h3>
+                <pr class="description">A web-based app for organizing and managing notes efficiently, enhanced with AI features for quick searching and categorization. Built for students and professionals to simplify note-taking.</pr>
+                <button class="projectButton"><a href="https://resplendent-madeleine-cd3666.netlify.app/">Live Demo</a></button>
+        </div>
+        <div class="box">
+            <img src="/images/weatherApp.png" class="weatherApp">
+            <h3>WEATHER FORECASTING APP</h3>
+            <pr class="description"> A Flutter-based app that provides real-time <br>weather updates, including temperature, humidity, and wind speed. Designed with an engaging and user-friendly UI for seamless navigation.</pr>
+            <button class="projectButton"><a href="#">View On GitHub</a></button>
+        </div>
+
+        <div class="box">
+            <img src="/images/Assistant.png" class="assistantApp">
+            <h3>AI CHATBOT APP</h3>
+            <pr class="description">An AI-powered chatbot app built with Flutter, utilizing Google’s Gemini API. The app supports text-based queries, image analysis, and stores chat history with Hive for a personalized user experience.</pr>
+            <button class="projectButton"><a href="https://github.com/Riitiika123/AI-Genie">View On GitHub</a></button>
+        </div>
+
+        <div class="box">
+            <img src="/images/profile.jpeg" class="portfolioWeb">
+            <h3>PORTFOLIO WEBSITE</h3>
+            <pr class="description">A responsive and interactive portfolio website showcasing skills, projects, and achievements. Includes features like a downloadable resume, GitHub integration, and a visually appealing layout.</pr>
+            <button class="projectButton"><a href="#">Live Demo</a></button>
+        </div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

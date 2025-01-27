@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <!--   Nav Section   -->
+
+    <nav id="navbar">
+      <div class="logo">
+      <h1>Portfolio</h1>
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="project_section.html">Project</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <h3 id="dark-mode-navbar" onclick="toggleDarkMode()"> 
+        <i class="fa-regular fa-sun" id="mode-icon-navbar"></i>
+      </h3> 
+    </nav>
+  <!--Hamburger menu-->
+  <nav id="hamburger-nav">
+      
+      <div class="logo">
+          <h1>Portfolio</h1>
+      </div>
+     
+      <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+            <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+            <li><a href="skills.html" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="project_section.html" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+        <h3 id="dark-mode-hamburger" onclick="toggleDarkMode()"> 
+          <i class="fa-regular fa-sun" id="mode-icon-hamburger"></i>
+        </h3>
+    </nav>
+
+
+
+      <!-- Skill Section -->
+    <div class="skills-section" id="skills">
+        <h1>Top Skills</h1>
+      
+        <!-- Programming Languages Section -->
+        <div class="skills-category">
+          <h2>Programming Languages</h2>
+          <div class="skills-container">
+            <div class="skill-item">
+                <i class="fab fa-html5 skill-icon"></i>
+                <h3>HTML</h3>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 98%;"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-css3-alt skill-icon"></i>
+                <h3>CSS</h3>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 95%;"></div>
+                </div>
+              </div>
+            
+            <div class="skill-item">
+              <i class="fab fa-js-square skill-icon"></i>
+              <h3>JavaScript</h3>
+              <div class="progress-bar">
+                <div class="progress" style="width: 50%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+                <i class="fas fa-code skill-icon"></i>
+                <h3>Dart</h3>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 60%;"></div>
+                </div>
+              </div>
+
+            <div class="skill-item">
+                <i class=" fab fa-python skill-icon"></i>
+                <h3>Python</h3>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 40%;"></div>
+                </div>
+              </div>
+          </div>
+        </div>
+      
+        <!-- Technical Skills Section -->
+        <div class="skills-category">
+          <h2>Technical Skills</h2>
+          <div class="skills-container">
+            <div class="skill-item">
+              <i class="fab fa-flutter skill-icon"></i>
+              <h3>Flutter</h3>
+              <div class="progress-bar">
+                <div class="progress" style="width: 70%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <i class="fas fa-code skill-icon"></i>
+              <h3>VS Code</Code></h3>
+              <div class="progress-bar">
+                <div class="progress" style="width: 80%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <i class="fab fa-git-alt skill-icon"></i>
+              <h3>GitHub</h3>
+              <div class="progress-bar">
+                <div class="progress" style="width: 60%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <i class="fas fa-plug skill-icon"></i>
+              <h3>API Integration</h3>
+              <div class="progress-bar">
+                <div class="progress" style="width: 70%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+                <i class="fab fa-html5 skill-icon"></i>
+                <h3>FireBase</h3>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 50%;"></div>
+                </div>
+              </div>
+          </div>
+        </div>
+      
+        <!-- Other Skills Section -->
+        <div class="skills-category">
+          <h2>Other Skills</h2>
+          <div class="skills-container">
+            <div class="skill-item">
+              <i class="fas fa-palette skill-icon"></i>
+              <h3>Graphic Design</h3>
+              <div class="progress-bar">
+                <div class="progress" style="width: 80%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <i class="fas fa-comments skill-icon"></i>
+              <h3>Communication</h3>
+              <div class="progress-bar">
+                <div class="progress" style="width: 90%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <i class="fas fa-brain skill-icon"></i>
+              <h3>Problem Solving</h3>
+              <div class="progress-bar">
+                <div class="progress" style="width: 85%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+    <script src="script.js"></script>
+</body>
+</html>

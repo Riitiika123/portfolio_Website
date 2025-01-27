@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+     <!--   Nav Section   -->
+
+    <nav id="navbar">
+      <div class="logo">
+      <h1>Portfolio</h1>
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="project_section.html">Project</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <h3 id="dark-mode-navbar" onclick="toggleDarkMode()"> 
+        <i class="fa-regular fa-sun" id="mode-icon-navbar"></i>
+      </h3> 
+    </nav>
+  <!--Hamburger menu-->
+  <nav id="hamburger-nav">
+      
+      <div class="logo">
+          <h1>Portfolio</h1>
+      </div>
+     
+      <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+            <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+            <li><a href="skills.html" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="project_section.html" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+        <h3 id="dark-mode-hamburger" onclick="toggleDarkMode()"> 
+          <i class="fa-regular fa-sun" id="mode-icon-hamburger"></i>
+        </h3>
+    </nav>
+
+
+    <!--   About Section  -->
+    <div class="about-section">
+        <h1> INTRODUCTION </h1>
+        <h2>Know More About Me</h2>
+    
+        <h3> Hi, I'm Ritika, & </h3>
+    
+        <div class="about-details-container">
+            <div class="about-container">
+              <div class="details-container">
+                <i class="fas fa-user icon"></i>
+                <h3>Fresher</h3>
+                <p>Software Developer</p>
+              </div>
+              <div class="details-container">
+                <i class="fas fa-graduation-cap icon"></i>
+                <h3>Education</h3>
+                <p>Final year B.Tech Student in <br />Computer Science</p>
+              </div>
+            </div>
+    
+        <pr class="paragraph"></pr>I'm  dedicated and passionate software developer with expertise in Flutter app development, web development, and UI/UX design.
+        <br><br>
+        With certifications in Flutter, Python, and Web Development, I have developed projects ranging from interactive chatbots to dynamic weather apps and e-commerce platforms. Beyond coding, I enjoy exploring Generative AI technologies and Graphic Design to push the boundaries of creativity in my work.
+        <br><br>
+        My goal is to continue developing impactful applications that enhance user experiences while growing as a tech enthusiast in this ever-evolving digital world.
+        </Pr>
+        <h3>Also check me at: </h3>
+        <div class="links">
+          <a href="https://github.com/Riitiika123"><i class="fab fa-github social-icon"></i></a>
+          <a href="https://www.linkedin.com/in/miss-ritika-54a550251/"><i class="fab fa-linkedin social-icon"></i></a>
+        </div>
+        </div>
+        
+        <script src="script.js"></script>
+
+
+</body>
+</html>
