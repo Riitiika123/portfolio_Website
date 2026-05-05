@@ -99,16 +99,10 @@
 
 /* ── Base & Nav ── */
 .light-mode nav a {
-  color: var(--text-color);
-}
-
-.light-mode .hamburger-icon span {
-  background-color: #000000;
-}
-
-.light-mode .menu-links a {
   color: #ffffff;
 }
+
+
 
 /* ── Hero section ── */
 .light-mode .hero-name {
