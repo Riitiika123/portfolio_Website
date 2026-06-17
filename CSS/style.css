@@ -20,6 +20,7 @@
     --secondary-text: #555;
 }
 
+
 @font-face {
     font-family: 'Gilroy';
     src: url('Gilroy-LightItalic.ttf') format('truetype');
@@ -146,17 +147,18 @@ nav h3 {
     width: fit-content;
     max-height: 0;
     overflow: hidden;
-    
+
     transition: max-height 0.3s ease-in-out;
     z-index: 999;
 }
 
 .menu-links a {
-   display: block;
+    display: block;
     padding: 14px 20px;
     text-align: center;
     font-size: 1.2rem;
-    color: #ffffff;       /* always white on purple */
+    color: #ffffff;
+    /* always white on purple */
     text-decoration: none;
     transition: background 0.2s ease;
 }
@@ -398,6 +400,7 @@ nav h3 {
 .social-icon {
     font-size: 30px;
     color: var(--text-color);
+    transition: #574964 0.25s, transform 0.2s;
 }
 
 

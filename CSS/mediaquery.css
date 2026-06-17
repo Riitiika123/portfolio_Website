@@ -1,4 +1,4 @@
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   nav {
     display: none;
   }
@@ -89,7 +89,6 @@
   }
 }
 
-
 /* ════════════════════════════════════════════
    LIGHT MODE OVERRIDES
    All hardcoded dark colors replaced with
@@ -99,10 +98,8 @@
 
 /* ── Base & Nav ── */
 .light-mode nav a {
-  color: #ffffff;
+  color: #000000;
 }
-
-
 
 /* ── Hero section ── */
 .light-mode .hero-name {
